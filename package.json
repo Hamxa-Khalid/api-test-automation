@@ -1,0 +1,30 @@
+{
+  "name": "api-test-automation",
+  "version": "1.0.0",
+  "description": "API test automation showcase for JSONPlaceholder using Playwright's request API and a Postman/Newman collection.",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:list": "npx playwright test --reporter=list",
+    "test:report": "npx playwright show-report",
+    "test:newman": "newman run postman/JSONPlaceholder.postman_collection.json -e postman/JSONPlaceholder.postman_environment.json"
+  },
+  "keywords": [
+    "api-testing",
+    "playwright",
+    "postman",
+    "newman",
+    "qa",
+    "test-automation",
+    "jsonplaceholder"
+  ],
+  "author": "Muhammad Hamza Khalid <muhammadhamzaqae@gmail.com> (https://www.linkedin.com/in/hamzakhalidqa/)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "newman": "^6.2.1"
+  }
+}
